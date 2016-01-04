@@ -26,6 +26,25 @@
             <RowDefinition Height="0.10*"/>
         </Grid.RowDefinitions>
         <GridView Grid.Row="1" ItemsSource="{Binding OrderItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="DarkGray">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="120" />
+                            <RowDefinition Height="120" />
+                        </Grid.RowDefinitions>
+                        <Border Background="#555555" Grid.Row="0" Width="220">
+                            <ListView ItemsSource="{Binding Items}" />
+                        </Border>
+                        <StackPanel  Grid.Row="1" Width="220" Orientation="Vertical">
+                            <TextBlock Text="{Binding Table}" FontSize="24"/>
+                            <TextBlock Text="Special Request:" Margin="10,0" FontSize="12"/>
+                            <TextBlock Text="{Binding SpecialRequests}" Margin="10,0" FontSize="12"/>
+                        </StackPanel>
+                        <Button Content="Delete" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="1" FontSize="18"/>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
         </GridView>
         <Button Content="Clear All Orders" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" />
     </Grid>
