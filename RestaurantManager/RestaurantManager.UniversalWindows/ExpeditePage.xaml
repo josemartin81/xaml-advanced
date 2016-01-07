@@ -7,6 +7,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <models:BoolToColorConverter x:Key="BoolToColorConverter"/>
+    </Page.Resources>
     <Page.DataContext>
         <models:ExpediteDataManager />
     </Page.DataContext>
@@ -41,7 +44,8 @@
                             <TextBlock Text="Special Request:" Margin="10,0" FontSize="12"/>
                             <TextBlock Text="{Binding SpecialRequests}" Margin="10,0" FontSize="12"/>
                         </StackPanel>
-                        <Button Content="Delete" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="1" FontSize="18"/>
+                        <Button Content="Delete" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="1" FontSize="18" 
+                                Background ="{Binding Expedite, Converter={StaticResource BoolToColorConverter}}" />
                     </Grid>
                 </DataTemplate>
             </GridView.ItemTemplate>
