@@ -7,7 +7,7 @@ using Windows.UI;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Media;
 
-namespace RestaurantManager.Models
+namespace RestaurantManager.Extensions
 {
     public class BoolToColorConverter : IValueConverter
     {

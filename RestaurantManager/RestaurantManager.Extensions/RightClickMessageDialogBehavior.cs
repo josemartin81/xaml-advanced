@@ -8,7 +8,7 @@ using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-namespace RestaurantManager.Models
+namespace RestaurantManager.Extensions
 {
     public class RightClickMessageDialogBehavior : DependencyObject, IBehavior
     {

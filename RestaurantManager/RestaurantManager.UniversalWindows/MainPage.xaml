@@ -4,13 +4,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:models="using:RestaurantManager.Models"
+    xmlns:extensions="using:RestaurantManager.Extensions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:i="using:Microsoft.Xaml.Interactivity"
     mc:Ignorable="d">
 
     <i:Interaction.Behaviors>
-        <models:RightClickMessageDialogBehavior Message="Right click" Title="Info"/>
+        <extensions:RightClickMessageDialogBehavior Message="Right click" Title="Info"/>
     </i:Interaction.Behaviors>
 
     <Page.Resources>
