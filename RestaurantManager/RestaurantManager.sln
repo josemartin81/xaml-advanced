@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.Models", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.Extensions", "RestaurantManager.Extensions\RestaurantManager.Extensions.csproj", "{5397146A-0091-4CAD-9939-E41F6B7DEB8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.ViewModels", "RestaurantManager.ViewModels\RestaurantManager.ViewModels.csproj", "{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,22 @@ Global
 		{5397146A-0091-4CAD-9939-E41F6B7DEB8C}.Release|x64.Build.0 = Release|x64
 		{5397146A-0091-4CAD-9939-E41F6B7DEB8C}.Release|x86.ActiveCfg = Release|x86
 		{5397146A-0091-4CAD-9939-E41F6B7DEB8C}.Release|x86.Build.0 = Release|x86
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Debug|ARM.Build.0 = Debug|ARM
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Debug|x64.ActiveCfg = Debug|x64
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Debug|x64.Build.0 = Debug|x64
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Debug|x86.ActiveCfg = Debug|x86
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Debug|x86.Build.0 = Debug|x86
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Release|ARM.ActiveCfg = Release|ARM
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Release|ARM.Build.0 = Release|ARM
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Release|x64.ActiveCfg = Release|x64
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Release|x64.Build.0 = Release|x64
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Release|x86.ActiveCfg = Release|x86
+		{E4DD2084-B424-45FF-8C2F-EE8F2AC208C4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

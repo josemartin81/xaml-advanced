@@ -5,11 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:models="using:RestaurantManager.Models"
+    xmlns:viewmodels="using:RestaurantManager.ViewModels"
+    xmlns:extensions="using:RestaurantManager.Extensions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
     mc:Ignorable="d">
     <Page.DataContext>
-        <models:OrderDataManager />
+        <viewmodels:OrderViewModel/>
     </Page.DataContext>
     <Page.TopAppBar>
         <AppBar>
@@ -37,9 +40,9 @@
         <TextBlock Grid.Row="2" Grid.Column="1" Text="Special Requests:" />
         <TextBlock Grid.Row="2" Grid.Column="2" Text="Order Items:" />
         <TextBox Grid.Row="3" Grid.Column="1" />
-        <ListView Grid.Row="2" Grid.RowSpan="3" Grid.Column="0" Margin="10" ItemsSource="{Binding MenuItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title" />
-        <ListView Grid.Row="3" Grid.RowSpan="2" Grid.Column="2" Margin="10" ItemsSource="{Binding CurrentlySelectedMenuItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title" />
-        <Button Content="Add to Order" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="5" Grid.Column="0" Margin="0,5,0,0" />
-        <Button Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" />
+        <ListView Grid.Row="2" Grid.RowSpan="3" Grid.Column="0" Margin="10" ItemsSource="{Binding MenuItems}" SelectedItem="{Binding SelectedMenuItem, Mode=TwoWay}" DisplayMemberPath="Title" />
+        <ListView Grid.Row="3" Grid.RowSpan="2" Grid.Column="2" Margin="10" ItemsSource="{Binding CurrentlySelectedMenuItems}" DisplayMemberPath="Title" />
+        <Button Content="Add to Order" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="5" Grid.Column="0" Margin="0,5,0,0" Command="{Binding AddMenuItemCommand}" />
+        <Button Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Command="{Binding SubmitOrderCommand}"/>
     </Grid>
 </Page>
