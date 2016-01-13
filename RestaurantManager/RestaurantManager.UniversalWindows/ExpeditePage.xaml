@@ -30,7 +30,7 @@
             <RowDefinition Height="0.85*"/>
             <RowDefinition Height="0.10*"/>
         </Grid.RowDefinitions>
-        <ProgressRing Height="100" Width="200" IsActive="{Binding IsLoading}"  Grid.Row="1" />
+        <ProgressRing Height="100" Width="100" IsActive="{Binding IsLoading}"  Grid.Row="0" Grid.RowSpan="3" />
         <GridView Grid.Row="1" ItemsSource="{Binding OrderItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <GridView.ItemTemplate>
                 <DataTemplate>
